@@ -123,8 +123,31 @@ Note: This transformation is typically performed in Excel rather than SQL.
   - Description: The time column format was transformed into a more user-friendly format, facilitating easier analysis of time-based trends.
 Note: This adjustment is typically done using Excel formatting tools.
 
-The SQL Queries used for data cleaning 👉[click here](https://github.com/Yourmaskguy/Stress-Management/commit/1b044bb52985e40768d89657d2e888db09be8e43)👈
+### The SQL Queries used for data cleaning 👉[click here](https://github.com/Yourmaskguy/Stress-Management/blob/1b044bb52985e40768d89657d2e888db09be8e43/stress%20managemt%20data%20cleaning.sql)👈
 
+
+### Exploratory Data Analysis (EDA)
+After cleaning the dataset in SQL Server, it was exported to Excel for in-depth analysis and visualization. The following steps were conducted during the EDA phase:
+
+- Descriptive Statistics: Key metrics such as stress severity, heart rate, and cortisol levels were calculated to provide a broad overview of the dataset. These statistics were used to summarize the data and identify any noticeable trends or outliers.
+- Data Visualization: Multiple charts and graphs were created to visually explore the relationships between stress sources, symptoms, heart rate, and cortisol levels. This included clustered bar charts, pie
+  charts, and line charts, which helped in identifying patterns and trends across gender, time of day, and emotional or physical symptoms.
+- Comparative Analysis: Pivot tables were used to compare stress sources across different demographics, such as gender. This allowed for a deeper understanding of how stress triggers differ between groups,
+  enabling more targeted insights.
+- Dashboard Creation: Interactive dashboards were built to present the key findings effectively. Features such as slicers were added to the Excel dashboard to allow for dynamic filtering and exploration of
+  variables like stress sources by gender, emotional symptoms by heart rate, and stress duration by physical symptoms.
+
+### Statistical Analysis
+The Stress Management Project applied various statistical methods to uncover insights into stress triggers, physiological responses, and behavioral impacts:
+
+- Descriptive Statistics: Summary statistics were generated for key variables, such as emotional symptoms, heart rate, cortisol levels, and stress duration. This quantified the average values and
+  distributions, providing a foundational understanding of the data.
+- Comparative Analysis: Stress triggers and emotional symptoms were compared across gender to identify patterns. Stress duration was also compared to sleep quality to determine how prolonged stress impacts
+  rest. This helped assess variations in stress triggers and their effects based on demographics and duration.
+- Trend Analysis: Cortisol levels were analyzed across different hours of the day to reveal hormonal fluctuations. This time-based analysis helped highlight patterns in cortisol peaks and troughs, showing
+  when individuals were most physiologically affected by stress.
+- Categorical Analysis: Physical symptoms were categorized and compared against stress duration to understand how long-term stress affected physical well-being. Additionally, moods were examined against
+  stress levels to determine how varying levels of stress impacted emotional states
 
 ### Tools Used
 This project utilized several tools to facilitate data analysis, visualization, and documentation:
