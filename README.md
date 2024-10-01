@@ -6,7 +6,7 @@ This project focuses on the development of a Stress Management Dashboard for Wel
 
 ### Problem Statement
 
-The goal of this analysis is to identify key factors that contribute to stress, including common triggers and the physical and emotional symptoms associated with it. Understanding these elements will help develop strategies to manage stress effectively.
+Stress is a significant issue impacting employee well-being and productivity. This analysis aims to identify the key factors contributing to stress, including prevalent stressors and their associated physical and emotional symptoms. By understanding these elements, Wellbeing Corp can develop targeted strategies to effectively manage and reduce stress, ultimately promoting a healthier work environment.
 
 ### Project Objectives:
 
@@ -25,7 +25,7 @@ The goal of this analysis is to identify key factors that contribute to stress, 
 5. Examine the Influence of Stress Levels on Mood
 - Analyze how varying stress levels impact mood changes, offering insights into emotional well-being and potential areas for intervention.
 
-# Data Description
+## Data Description
 
 ### Data Sources
 
@@ -69,3 +69,24 @@ The dataset includes the following variables:
 - Heart Rate: Heart rate measurement (bpm)
 - Cortisol Level: Cortisol level measurement (µg/dL)
 - Stress Level Score: Calculated score representing the level of stress
+
+#### Data Types:
+The dataset includes both categorical (e.g., gender, stress sources) and numerical data (e.g., heart rate, cortisol levels).
+
+## Methodology
+
+The methodology for this project encompasses several key stages: data cleaning, exploratory data analysis (EDA), and statistical analysis. The tools utilized throughout the project include SQL Server for data manipulation and analysis, Excel for data visualization and dashboard creation, and Microsoft Word for documentation.
+
+
+### Tools Used
+This project utilized several tools to facilitate data analysis, visualization, and documentation:
+
+- SQL Server(SMSS) : Used for data storage, retrieval, and manipulation. SQL queries were employed to clean the data, perform analyses, and create views.
+   - [Download SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) and [Download SMSS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
+
+- Microsoft Excel: Utilized for exploratory data analysis (EDA), visualization, and dashboard creation. Excel’s pivot tables, charts, and slicers provided a dynamic way to present findings and enable user interaction.
+  [Download here}(https://www.microsoft.com/en-us/microsoft-365/excel)
+
+- Microsoft Word: For comprehensive documentation of the project, including methodologies, findings, and recommendations.
+  [Download here](https://www.microsoft.com/en-us/microsoft-365/download-office)
+
