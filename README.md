@@ -77,6 +77,51 @@ The dataset includes both categorical (e.g., gender, stress sources) and numeric
 
 The methodology for this project encompasses several key stages: data cleaning, exploratory data analysis (EDA), and statistical analysis. The tools utilized throughout the project include SQL Server for data manipulation and analysis, Excel for data visualization and dashboard creation, and Microsoft Word for documentation.
 
+### Data Cleaning
+
+Data cleaning is a critical step in data analysis that ensures the dataset is accurate, complete, and ready for insightful analysis. Below is a comprehensive outline of the data cleaning processes implemented in the Stress Management Project, detailing each step along with SQL queries where applicable.
+
+1. Renaming Columns for Clarity
+   -  Objective: Enhance the readability and interpretability of the dataset by using clear and descriptive column names.
+   -  Description: Column names were modified to reflect the content accurately, which aids in understanding and reduces confusion during analysis.
+SQL Query:
+```sql
+EXEC sp_rename 'stress_levels.id','ID'
+EXEC sp_rename 'stress_levels.first_name','First Name'
+EXEC sp_rename 'stress_levels.last_name','Last Name'
+EXEC sp_rename 'stress_levels.gender','Gender'
+EXEC sp_rename 'stress_levels.dob','Date of Birth'
+EXEC sp_rename 'stress_levels.test_date','Date'
+EXEC sp_rename 'stress_levels.test_time','Time'
+EXEC sp_rename 'stress_levels.stress_source','Stress Source'
+EXEC sp_rename 'stress_levels.physical_symptoms','Physical Symptoms'
+EXEC sp_rename 'stress_levels.emotional_symptoms','Emotional Symptoms'
+EXEC sp_rename 'stress_levels.coping_mechanism','Coping Mechanisms'
+EXEC sp_rename 'stress_levels.stress_duration','Duration of Stress (days)'
+EXEC sp_rename 'stress_levels.severity','Severity'
+EXEC sp_rename 'stress_levels.sleep_quality','Sleep Quality'
+EXEC sp_rename 'stress_levels.mood','Mood'
+EXEC sp_rename 'stress_levels.heart_rate','Heart Rate'
+EXEC sp_rename 'stress_levels.cortisol_level','Cortisol Level'
+EXEC sp_rename 'stress_levels.stress_level_score','Self-Reported Stress Score'
+```
+
+2. Updating Gender Values
+
+   - Objective: Improve data consistency by standardizing gender representations.
+   - Description: Gender values originally represented as 'M' and 'F' were updated to 'Male' and 'Female' to provide clarity and avoid ambiguity in analysis.
+SQL Query:
+```sql
+Update [stress_levels]
+Set Gender = Case
+When Gender = 'M' Then 'Male'
+When Gender = 'F' Then 'Female'
+End
+```
+
+
+
+
 
 ### Tools Used
 This project utilized several tools to facilitate data analysis, visualization, and documentation:
@@ -85,8 +130,8 @@ This project utilized several tools to facilitate data analysis, visualization, 
    - [Download SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads) and [Download SMSS](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15)
 
 - Microsoft Excel: Utilized for exploratory data analysis (EDA), visualization, and dashboard creation. Excel’s pivot tables, charts, and slicers provided a dynamic way to present findings and enable user interaction.
-  [Download here}(https://www.microsoft.com/en-us/microsoft-365/excel)
+ - [Download here](https://www.microsoft.com/en-us/microsoft-365/excel)
 
 - Microsoft Word: For comprehensive documentation of the project, including methodologies, findings, and recommendations.
-  [Download here](https://www.microsoft.com/en-us/microsoft-365/download-office)
+  - [Download here](https://www.microsoft.com/en-us/microsoft-365/download-office)
 
