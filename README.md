@@ -84,44 +84,46 @@ Data cleaning is a critical step in data analysis that ensures the dataset is ac
 1. Renaming Columns for Clarity
    -  Objective: Enhance the readability and interpretability of the dataset by using clear and descriptive column names.
    -  Description: Column names were modified to reflect the content accurately, which aids in understanding and reduces confusion during analysis.
-SQL Query:
-```sql
-EXEC sp_rename 'stress_levels.id','ID'
-EXEC sp_rename 'stress_levels.first_name','First Name'
-EXEC sp_rename 'stress_levels.last_name','Last Name'
-EXEC sp_rename 'stress_levels.gender','Gender'
-EXEC sp_rename 'stress_levels.dob','Date of Birth'
-EXEC sp_rename 'stress_levels.test_date','Date'
-EXEC sp_rename 'stress_levels.test_time','Time'
-EXEC sp_rename 'stress_levels.stress_source','Stress Source'
-EXEC sp_rename 'stress_levels.physical_symptoms','Physical Symptoms'
-EXEC sp_rename 'stress_levels.emotional_symptoms','Emotional Symptoms'
-EXEC sp_rename 'stress_levels.coping_mechanism','Coping Mechanisms'
-EXEC sp_rename 'stress_levels.stress_duration','Duration of Stress (days)'
-EXEC sp_rename 'stress_levels.severity','Severity'
-EXEC sp_rename 'stress_levels.sleep_quality','Sleep Quality'
-EXEC sp_rename 'stress_levels.mood','Mood'
-EXEC sp_rename 'stress_levels.heart_rate','Heart Rate'
-EXEC sp_rename 'stress_levels.cortisol_level','Cortisol Level'
-EXEC sp_rename 'stress_levels.stress_level_score','Self-Reported Stress Score'
-```
 
 2. Updating Gender Values
-
    - Objective: Improve data consistency by standardizing gender representations.
    - Description: Gender values originally represented as 'M' and 'F' were updated to 'Male' and 'Female' to provide clarity and avoid ambiguity in analysis.
-SQL Query:
-```sql
-Update [stress_levels]
-Set Gender = Case
-When Gender = 'M' Then 'Male'
-When Gender = 'F' Then 'Female'
-End
-```
 
+3. Removing Duplicate Values
+  - Objective: Maintain the integrity of the dataset by ensuring each record is unique.
+  - Description: Identified and removed duplicate records across relevant columns, which could skew analysis results if left unaddressed.
 
+4. Handling Missing Values
+  - Objective: Ensure completeness of the dataset by addressing any missing values.
+  - Description: For the entry with the ID of 'FSXMV4', the [Stress Level Score] was updated to the average score of other entries to provide a more accurate representation of stress levels.
 
+5. Deleting Null Values
+  - Objective: Clean the dataset by removing any rows containing null values that could affect the quality of analysis.
+  - Description: Rows with null values in any critical columns were deleted to ensure that subsequent analyses are based on complete data.
 
+6. Transforming Numeric Values to Currency Format
+  - Objective: Ensure financial data is presented consistently for clear analysis.
+  - Description: Financial columns such as unit prices and totals were formatted to a standardized currency format. This is particularly important for financial analyses.
+Note: This transformation is typically performed in Excel rather than SQL.
+
+7. Creating Views for Analysis
+  - Objective: Simplify complex queries by creating views that provide a consolidated view of necessary data.
+  - Description: A view named stress_level was created to facilitate easier querying of full names, age, gender, and stress levels.
+
+8. Grouping Stress Levels into Categories
+  - Objective: Facilitate analysis by categorizing stress levels into distinct groups.
+  - Description: Stress levels were classified into categories such as low, moderate, and high, enabling better understanding of stress distribution among individuals.
+
+9. Updating Age Values and Classifying Age Groups
+  - Objective: Provide demographic insights by calculating age and categorizing into age groups.
+  - Description: New columns for age and corresponding age groups were added based on the date of birth.
+
+10. Adjusting the Time Column Format
+  - Objective: Enhance readability and usability of time-related data.
+  - Description: The time column format was transformed into a more user-friendly format, facilitating easier analysis of time-based trends.
+Note: This adjustment is typically done using Excel formatting tools.
+
+The SQL Queries used for data cleaning 
 
 ### Tools Used
 This project utilized several tools to facilitate data analysis, visualization, and documentation:
