@@ -123,7 +123,8 @@ Note: This transformation is typically performed in Excel rather than SQL.
   - Description: The time column format was transformed into a more user-friendly format, facilitating easier analysis of time-based trends.
 Note: This adjustment is typically done using Excel formatting tools.
 
-The SQL Queries used for data cleaning 
+The SQL Queries used for data cleaning 👉[click here](https://github.com/Yourmaskguy/Stress-Management/commit/1b044bb52985e40768d89657d2e888db09be8e43)👈
+
 
 ### Tools Used
 This project utilized several tools to facilitate data analysis, visualization, and documentation:
