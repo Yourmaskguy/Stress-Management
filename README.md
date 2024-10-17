@@ -161,3 +161,46 @@ This project utilized several tools to facilitate data analysis, visualization, 
 - Microsoft Word: For comprehensive documentation of the project, including methodologies, findings, and recommendations.
   - [Download here](https://www.microsoft.com/en-us/microsoft-365/download-office)
 
+## Data Analysis
+This section details the analyses conducted to address the project's key objectives. Each objective is presented with its rationale, the analytical approach employed, and the insights derived from the findings.
+
+- Objective 1: Analyze Emotional Symptoms with Average Heart Rate
+  - Rationale: Understanding the correlation between emotional symptoms and heart rate provides insights into how stress manifests physically, enabling targeted interventions.
+  - Analysis: Emotional symptoms were categorized, and the average heart rate associated with each symptom was calculated. The results were subsequently visualized in Excel for further analysis.
+  - Insights: The findings revealed that negative emotions, such as anger and anxiety, corresponded with significantly higher average heart rates. In contrast, positive emotions like joy were linked to lower
+    heart rates, indicating a strong connection between emotional well-being and physiological responses.
+
+- Objective 2: Identify Stress Triggers by Gender
+  - Rationale: Identifying gender differences in stress triggers aids in designing targeted stress management strategies, enhancing intervention effectiveness.
+  - Analysis: A comparative analysis was conducted to evaluate the frequency of various stress triggers across genders. The data was visualized in Excel to highlight differences.
+  - Insights: Work-related stress emerged as the primary trigger for both genders, while financial concerns were reported more frequently by females. This suggests the need for tailored stress management
+    programs that address gender-specific concerns.
+
+- Objective 3: Calculate Average Cortisol Levels by Hour
+  - Rationale: Cortisol serves as a key indicator of stress levels, and understanding its fluctuation throughout the day can inform strategies for effective stress management.
+  - Analysis: Average cortisol levels were calculated for each hour of the day to identify patterns in stress responses. This data was visualized using line charts in Excel.
+  - Insights: The analysis indicated that cortisol levels peaked in the late morning and gradually declined throughout the afternoon. This insight suggests that stress management interventions could be most
+    effective during peak cortisol periods.
+
+- Objective 4: Assess the Impact of Stress Duration on Sleep Quality
+  - Rationale: Investigating the impact of stress duration on sleep quality emphasizes the importance of timely stress intervention to prevent sleep disturbances.
+  - Analysis: The relationship between stress duration and reported sleep quality was analyzed to identify trends. Visualizations in Excel highlighted the findings.
+  - Insights: Prolonged exposure to stress was significantly linked to poorer sleep quality, particularly instances of insomnia. This underscores the importance of early intervention strategies in stress
+    management to enhance sleep outcomes.
+
+- Objective 5: Assess the Impact of Stress Level on Mood
+  - Rationale: Understanding how varying stress levels affect mood can assist in identifying effective coping strategies and interventions to improve emotional well-being.
+  - Analysis: A categorical analysis was performed to assess the relationship between stress levels and reported moods. The results were visualized to convey key findings.
+  - Insights: Higher stress levels were consistently associated with negative moods, such as sadness and irritability. This relationship highlights the necessity of implementing stress reduction techniques
+    to improve overall emotional health.
+
+## Dashboard Creation (Excel)
+Following the data analysis, an interactive dashboard was developed using Excel, which includes:
+
+Charts:
+Line charts displaying average cortisol levels by hour.
+Bar charts illustrating stress triggers by gender.
+Pie charts visualizing the relationship between emotional symptoms and heart rate.
+Interactivity: Slicers were incorporated to enable users to filter data based on gender, stress duration, and emotional symptoms, facilitating a more in-depth exploration of the findings.
+
+
